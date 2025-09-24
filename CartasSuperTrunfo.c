@@ -22,7 +22,7 @@ int main() {
 
 
   // Área para entrada de dados
-  //dados da carta 1
+  //coleta de dados da carta 1
   printf("Vamos fazer a primeira carta!\n");
   printf("Por favor, coloque a letra do primeiro estado, use apenas uma letra, de A até H\n");
   scanf(" %c", &estado01);
@@ -46,7 +46,7 @@ int main() {
   scanf("%d", &pontosTuristicosCidade01);
 
 
-  //dados da carta 2
+  //coleta de dados da carta 2
   printf("Vamos fazer a segunda carta!\n");
     printf("Por favor, coloque a letra do segundo estado, use apenas uma letra, de A até H\n");
   scanf(" %c", &estado02);
@@ -72,10 +72,10 @@ int main() {
 
   // Área para exibição dos dados da cidade
   //decidi fazer um printf apenas para todos os dados da carta 1 e outro para a carta 2, para ocupar menos espaço
-  printf("\nCarta1\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação da cidade: %d\nArea da cidade: %fkm²\nPib: %f\nPontos turisticos: %d\n\n", estado01, codigoCarta01, nomeCidade01, populacaoCidade01, areaCidade01, pibCidade01, pontosTuristicosCidade01);
+  printf("\nCarta1\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação da cidade: %d\nArea da cidade: %.2fkm²\nPib: %.2f\nPontos turisticos: %d\n\n", estado01, codigoCarta01, nomeCidade01, populacaoCidade01, areaCidade01, pibCidade01, pontosTuristicosCidade01);
 
  //printf da carta 2
-  printf("Carta2\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação da cidade: %d\nArea da cidade: %fkm²\nPib: %f\nPontos turisticos: %d\n", estado02, codigoCarta02, nomeCidade02, populacaoCidade02, areaCidade02, pibCidade02, pontosTuristicosCidade02);
+  printf("Carta2\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação da cidade: %d\nArea da cidade: %.2fkm²\nPib: %.2f\nPontos turisticos: %d\n", estado02, codigoCarta02, nomeCidade02, populacaoCidade02, areaCidade02, pibCidade02, pontosTuristicosCidade02);
 
 
 
