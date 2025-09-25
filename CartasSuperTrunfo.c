@@ -121,6 +121,7 @@ int main()
   printf("\nPib per Capita: resultado = %d", pibPerCapita01 > pibPerCapita02);
 
   printf("\nSuper Poder: resultado = %d", superPoder01 > superPoder02);
+  printf("\n\n");
 
   return 0;
 }
