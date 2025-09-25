@@ -4,6 +4,18 @@
 // Tema 1 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
+//codigo para fazer a densidade 
+float calcularDensidade(int populacao, float area) {
+   
+    return populacao / area;
+}
+//codigo para fazer o pib per capita, é necessario transformar o pib em reais, por isso multiplica por 1 bilhão
+float calcularPibPerCapita(float pib, int populacao) {
+   return (pib * 1000000000) / populacao;
+
+} 
+
+
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
 
@@ -17,6 +29,9 @@ int main() {
   float areaCidade01, areaCidade02;
   float pibCidade01, pibCidade02;
   int pontosTuristicosCidade01, pontosTuristicosCidade02;
+  float densidadePopulacional01, densidadePopulacional02;
+  float pibPerCapita01, pibPerCapita02;
+  
 
 
 
@@ -39,11 +54,16 @@ int main() {
   printf("Agora coloque a área da cidade em km²\n");
   scanf("%f", &areaCidade01);
 
-  printf("Agora coloque o PIB da cidade\n");
+  printf("Agora coloque o PIB da cidade em bilhões\n");
   scanf("%f", &pibCidade01);
 
   printf("Por fim, coloque quantos pontos turisticos a cidade possui\n");
   scanf("%d", &pontosTuristicosCidade01);
+
+
+  
+
+  
 
 
   //coleta de dados da carta 2
@@ -63,19 +83,34 @@ int main() {
   printf("Agora coloque a área da cidade em km²\n");
   scanf("%f", &areaCidade02);
 
-  printf("Agora coloque o PIB da cidade\n");
+  printf("Agora coloque o PIB da cidade em bilhões\n");
   scanf("%f", &pibCidade02);
 
   printf("Por fim, coloque quantos pontos turisticos a cidade possui\n");
   scanf("%d", &pontosTuristicosCidade02);
+
+
+
+  //calculo da densidade populacional
+  densidadePopulacional01 = calcularDensidade(populacaoCidade01, areaCidade01);
+  densidadePopulacional02 = calcularDensidade(populacaoCidade02, areaCidade02);
+
+
+  //calculo do pib per capita
+  pibPerCapita01 = calcularPibPerCapita(pibCidade01, populacaoCidade01);
+  pibPerCapita02 = calcularPibPerCapita(pibCidade02, populacaoCidade02);
+
+
+
+
   
 
   // Área para exibição dos dados da cidade
   //decidi fazer um printf apenas para todos os dados da carta 1 e outro para a carta 2, para ocupar menos espaço
-  printf("\nCarta1\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação da cidade: %d\nArea da cidade: %.2fkm²\nPib: %.2f\nPontos turisticos: %d\n\n", estado01, codigoCarta01, nomeCidade01, populacaoCidade01, areaCidade01, pibCidade01, pontosTuristicosCidade01);
+  printf("\nCarta1\nEstado: %c\nCódigo: %s\nNome da cidade: %s \nPopulação da cidade: %d \nArea da cidade: %.2fkm² \nPib: %.2f bilhão\nPontos turisticos: %d \nDensidade populacional: %.2f habitantes por km² \nPib per Capta: %.2f reais ", estado01, codigoCarta01, nomeCidade01, populacaoCidade01, areaCidade01, pibCidade01, pontosTuristicosCidade01, densidadePopulacional01, pibPerCapita01  );
 
  //printf da carta 2
-  printf("Carta2\nEstado: %c\nCódigo: %s\nNome da cidade: %s\nPopulação da cidade: %d\nArea da cidade: %.2fkm²\nPib: %.2f\nPontos turisticos: %d\n", estado02, codigoCarta02, nomeCidade02, populacaoCidade02, areaCidade02, pibCidade02, pontosTuristicosCidade02);
+ printf("\n\nCarta2\nEstado: %c\nCódigo: %s\nNome da cidade: %s \nPopulação da cidade: %d \nArea da cidade: %.2fkm² \nPib: %.2f bilhão\nPontos turisticos: %d \nDensidade populacional: %.2f habitantes por km² \nPib per Capta: %.2f reais ", estado02, codigoCarta02, nomeCidade02, populacaoCidade02, areaCidade02, pibCidade02, pontosTuristicosCidade02, densidadePopulacional02, pibPerCapita02  );
 
 
 
