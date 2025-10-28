@@ -27,7 +27,7 @@ int main()
 {
   // Área para definição das variáveis para armazenar as propriedades das cidades
 
-  char estado01= "SaoPaulo", estado02= "RioDeJaneiro";
+  char estado01= 'A', estado02= 'B';
   char codigoCarta01[10]= "a01", codigoCarta02[10]= "b02";
   char nomeCidade01[20]= "SaoPaulo", nomeCidade02[20]= "RioDeJaneiro";
   unsigned long int populacaoCidade01= 12000000, populacaoCidade02= 6200000;
