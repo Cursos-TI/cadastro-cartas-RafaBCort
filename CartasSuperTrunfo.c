@@ -229,6 +229,6 @@ int main()
   default:
     printf("por favor, use os números de 1 a 6\n");
     break;
-
+  }
     return 0;
   }
