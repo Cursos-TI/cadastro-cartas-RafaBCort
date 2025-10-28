@@ -27,13 +27,13 @@ int main()
 {
   // Área para definição das variáveis para armazenar as propriedades das cidades
 
-  char estado01, estado02;
-  char codigoCarta01[10], codigoCarta02[10];
-  char nomeCidade01[20], nomeCidade02[20];
-  unsigned long int populacaoCidade01, populacaoCidade02;
-  float areaCidade01, areaCidade02;
-  float pibCidade01, pibCidade02;
-  int pontosTuristicosCidade01, pontosTuristicosCidade02;
+  char estado01= "SaoPaulo", estado02= "RioDeJaneiro";
+  char codigoCarta01[10]= "a01", codigoCarta02[10]= "b02";
+  char nomeCidade01[20]= "SaoPaulo", nomeCidade02[20]= "RioDeJaneiro";
+  unsigned long int populacaoCidade01= 12000000, populacaoCidade02= 6200000;
+  float areaCidade01= 1500.f, areaCidade02= 1200.f;
+  float pibCidade01= 828.9, pibCidade02 = 359.6;
+  int pontosTuristicosCidade01= 5, pontosTuristicosCidade02 = 7;
   float densidadePopulacional01, densidadePopulacional02;
   float pibPerCapita01, pibPerCapita02;
   float superPoder01 = 0.f, superPoder02 = 0.f;
@@ -41,6 +41,7 @@ int main()
 
   // Área para entrada de dados
   // coleta de dados da carta 1.
+  /*a coleta de dados é ignorada nessa parte final da atividade, então apenas irei comentar o código
   printf("Vamos fazer a primeira carta!\n");
   printf("Por favor, coloque a letra do primeiro estado, use apenas uma letra, de A até H\n");
   scanf(" %c", &estado01);
@@ -85,7 +86,7 @@ int main()
 
   printf("Por fim, coloque quantos pontos turisticos a cidade possui\n");
   scanf("%d", &pontosTuristicosCidade02);
-
+  */
   // calculo da densidade populacional
   densidadePopulacional01 = calcularDensidade(populacaoCidade01, areaCidade01);
   densidadePopulacional02 = calcularDensidade(populacaoCidade02, areaCidade02);
