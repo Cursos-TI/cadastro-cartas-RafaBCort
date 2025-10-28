@@ -39,7 +39,7 @@ int main()
   float superPoder01, superPoder02;
 
   // Área para entrada de dados
-  // coleta de dados da carta 1
+  // coleta de dados da carta 1.
   printf("Vamos fazer a primeira carta!\n");
   printf("Por favor, coloque a letra do primeiro estado, use apenas uma letra, de A até H\n");
   scanf(" %c", &estado01);
